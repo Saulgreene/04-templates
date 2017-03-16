@@ -23,9 +23,9 @@ Article.prototype.toHtml = function() {
   //   For example, you might want to display how old a post is, or say "(draft)" if it has no publication date:
   this.daysAgo = parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000);
   this.publishStatus = this.publishedOn ? `published ${this.daysAgo} days ago` : '(draft)';
-  return templateRender(this);
 
   // TODO: Use the function that Handlebars gave you to return your filled-in html template for THIS article.
+  return templateRender(this);
 
 };
 
