@@ -19,8 +19,18 @@
         - If your object doesn't have values you need yet, you can add those properties in the model.
     -->
 
+    <script id="article-template" type="text/x-handelbars-template">
+      <hr>
+      <h2>{{title}}</h2>
+      <p>{{category}}</p>
+      <p>{{author}}</p>
+      <p>{{authorUrl}}</p>
+      <p>{{publishedOn}}</p>
+      <p>{{{body}}}</p>
+      <hr>
+    </script>
   </head>
-  
+
   <body>
     <header class="site-header clearfix">
       <section class="heading-group-h1">
@@ -64,7 +74,7 @@
           <h1>Some of my intrests:</h1>
           <ul>
             <li>Coding</li>
-            <li>Sharing what I've learned</li>
+            <li>Sharing what Ive learned</li>
             <li>Hanging with my family</li>
           </ul>
         </section>
@@ -76,7 +86,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- TODO: Include Handlebars.JS from a CDN -->
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
     <script src="scripts/blogArticles.js"></script>
     <script src="scripts/article.js"></script>
     <script src="scripts/articleView.js"></script>
