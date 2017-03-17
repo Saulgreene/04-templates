@@ -19,7 +19,7 @@ Article.prototype.toHtml = function() {
 
   this.daysAgo = parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000);
   this.publishStatus = this.publishedOn ? `published ${this.daysAgo} days ago` : '(draft)';
-
+  // TODO: Use the function that Handlebars gave you to return your filled-in html template for THIS article.
   return templateRender(this);
 };
 
