@@ -20,14 +20,18 @@
     -->
 
     <script id="article-template" type="text/x-handelbars-template">
-      <hr>
-      <h2>{{title}}</h2>
-      <p>{{category}}</p>
-      <p>{{author}}</p>
-      <p>{{authorUrl}}</p>
-      <p>{{publishedOn}}</p>
-      <p>{{{body}}}</p>
-      <hr>
+      <article class="clearfix" data-category="{{category}}" data-author="{{author}}">
+              <header>
+                <h1>{{title}}</h1>
+                <div class="byline">
+                  By <address><a href="{{authorUrl}}">{{author}}</a></address>
+                  published <time pubdate datetime="2000-01-01">{{publishedOn}}</time>
+                </div>
+              </header>
+              <section class="article-body">{{{body}}}</section>
+              <a href="#" class="read-on">Read on &rarr;</a>
+            </article>
+
     </script>
   </head>
 
